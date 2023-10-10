@@ -1,0 +1,69 @@
+/*reset some defualt browser styles*/
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*style the header*/
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/*resize the images*/
+img{
+    width: 100%;
+}
+
+/*create a flex container for the main content*/
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+/*style individual articles*/
+article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    flex: 1;
+    /*make articles flexible*/
+    max-width: calc(33.33%-2rem);
+    /*create 3 columns*/
+}
+
+/*style the sidebar*/
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    flex-basis: 30%;
+    /*defines width of sidebar*/
+}
+
+/*style the popular articles*/
+.sidebar h3 {
+    font-size: 1.2rem;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+/*style the footer*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
